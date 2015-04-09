@@ -39,6 +39,7 @@
 #define GAMEBOARD_H
 
 #include <QWidget>
+#include <QPushButton>
 
 QT_BEGIN_NAMESPACE
 class QLCDNumber;
@@ -51,6 +52,7 @@ class GameBoard : public QWidget
 
 public:
     GameBoard(QWidget *parent = 0);
+    void quitEnable(bool);
 
 protected slots:
     void fire();
@@ -62,6 +64,7 @@ private:
     QLCDNumber *hits;
     QLCDNumber *shotsLeft;
     CannonField *cannonField;
+    QPushButton *quit;
 };
 
 #endif

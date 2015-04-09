@@ -53,7 +53,7 @@
 GameBoard::GameBoard(QWidget *parent)
     : QWidget(parent)
 {
-    QPushButton *quit = new QPushButton(tr("&Quit"));
+    quit = new QPushButton(tr("&Quit"));
     quit->setFont(QFont("Times", 18, QFont::Bold));
 
     connect(quit, SIGNAL(clicked()), qApp, SLOT(quit()));
@@ -150,6 +150,11 @@ GameBoard::GameBoard(QWidget *parent)
     angle->setFocus();
 
     newGame();
+}
+
+void GameBoard::quitEnable(bool status)
+{
+    quit->setEnabled(status);
 }
 
 void GameBoard::fire()

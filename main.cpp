@@ -41,8 +41,16 @@
 
 int main(int argc, char *argv[])
 {
+    int i;
+
     QApplication app(argc, argv);
     GameBoard board;
+
+    for (i = 0; i < argc; i++) {
+      if (QString(argv[i]) == "-noquit")
+        board.quitEnable(false);
+    }
+
     board.setGeometry(100, 100, 500, 355);
     board.show();
     return app.exec();
