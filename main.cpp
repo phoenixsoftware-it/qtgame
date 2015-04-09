@@ -49,6 +49,8 @@ int main(int argc, char *argv[])
     for (i = 0; i < argc; i++) {
       if (QString(argv[i]) == "-noquit")
         board.quitEnable(false);
+      else if (QString(argv[i]) == "-noframe")
+        board.setWindowFlags(Qt::Window | Qt::FramelessWindowHint);
     }
 
     board.setGeometry(100, 100, 500, 355);
