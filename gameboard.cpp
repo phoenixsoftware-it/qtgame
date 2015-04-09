@@ -59,7 +59,7 @@ GameBoard::GameBoard(QWidget *parent)
     connect(quit, SIGNAL(clicked()), qApp, SLOT(quit()));
 
     LCDRange *angle = new LCDRange(tr("ANGLE"));
-    angle->setRange(5, 70);
+    angle->setRange(5, 85);
 
     LCDRange *force = new LCDRange(tr("FORCE"));
     force->setRange(10, 50);

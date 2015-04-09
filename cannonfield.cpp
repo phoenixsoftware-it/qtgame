@@ -70,8 +70,8 @@ void CannonField::setAngle(int angle)
 {
     if (angle < 5)
         angle = 5;
-    if (angle > 70)
-        angle = 70;
+    if (angle > 85)
+        angle = 85;
     if (currentAngle == angle)
         return;
     currentAngle = angle;
