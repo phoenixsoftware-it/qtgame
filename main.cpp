@@ -53,7 +53,7 @@ int main(int argc, char *argv[])
         board.setWindowFlags(Qt::Window | Qt::FramelessWindowHint);
     }
 
-    board.setGeometry(100, 100, 500, 355);
+    board.setGeometry(0, 0, 800, 480);
     board.show();
     return app.exec();
 }

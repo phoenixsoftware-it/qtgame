@@ -109,7 +109,7 @@ void CannonField::newTarget()
         QTime midnight(0, 0, 0);
         qsrand(midnight.secsTo(QTime::currentTime()));
     }
-    target = QPoint(200 + qrand() % 190, 10 + qrand() % 255);
+    target = QPoint(200 + qrand() % 440, 10 + qrand() % 370);
     update();
 }
 
