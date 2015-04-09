@@ -62,7 +62,7 @@ GameBoard::GameBoard(QWidget *parent)
     angle->setRange(5, 85);
 
     LCDRange *force = new LCDRange(tr("FORCE"));
-    force->setRange(10, 50);
+    force->setRange(10, 90);
 
 //! [0]
     QFrame *cannonBox = new QFrame;
