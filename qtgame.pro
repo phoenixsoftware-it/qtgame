@@ -3,9 +3,10 @@
 ######################################################################
 
 TEMPLATE = app
-TARGET = 
 DEPENDPATH += .
 INCLUDEPATH += .
+
+greaterThan(QT_MAJOR_VERSION, 4):QT += widgets
 
 # Input
 HEADERS += cannonfield.h gameboard.h lcdrange.h

@@ -151,7 +151,7 @@ void CannonField::moveShot()
         emit missed();
         emit canShoot(true);
     } else {
-        region = region.unite(shotR);
+        region = region.united(shotR);
     }
     update(region);
 }
